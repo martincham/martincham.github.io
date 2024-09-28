@@ -1,16 +1,93 @@
-import {
+/*import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import ListItem from "@/components/ui/list-item";
+import ListItem from "@/components/ui/list-item"; */
 import { ModeToggle } from "@/components/mode-toggle";
+import {
+  Menubar,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarTrigger,
+} from "@/components/ui/menubar";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="flex justify-between items-center w-full">
+      {/* Menubar content on the left */}
+      <Menubar>
+        <MenubarMenu>
+          <MenubarTrigger>Art Work</MenubarTrigger>
+          <MenubarContent>
+            <Link to="/hubris">
+              <MenubarItem>
+                Hubris <MenubarShortcut>2024</MenubarShortcut>
+              </MenubarItem>
+            </Link>
+            <Link to="/penance">
+              <MenubarItem>
+                Penance <MenubarShortcut>2024</MenubarShortcut>
+              </MenubarItem>
+            </Link>
+            <MenubarSeparator />
+            <Link to="/ballforbouncing">
+              <MenubarItem>
+                Ball for Bouncing <MenubarShortcut>2022</MenubarShortcut>
+              </MenubarItem>
+            </Link>
+            <Link to="/tofu">
+              <MenubarItem>
+                Tofu <MenubarShortcut>2022</MenubarShortcut>
+              </MenubarItem>
+            </Link>
+            <MenubarSeparator />
+            <MenubarItem>
+              Print <MenubarShortcut>⌘P</MenubarShortcut>
+            </MenubarItem>
+          </MenubarContent>
+        </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger>Dev Work</MenubarTrigger>
+          <MenubarContent>
+            <MenubarItem>
+              Hubris Robotics<MenubarShortcut></MenubarShortcut>
+            </MenubarItem>
+            <MenubarItem>NBA Analytics</MenubarItem>
+            <MenubarSeparator />
+            <MenubarItem>Share</MenubarItem>
+            <MenubarSeparator />
+            <MenubarItem>Print</MenubarItem>
+          </MenubarContent>
+        </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger>About</MenubarTrigger>
+          <MenubarContent>
+            <MenubarItem>
+              Artist Statement <MenubarShortcut></MenubarShortcut>
+            </MenubarItem>
+            <MenubarItem>Links</MenubarItem>
+            <MenubarSeparator />
+            <MenubarItem>Share</MenubarItem>
+            <MenubarSeparator />
+            <MenubarItem>Print</MenubarItem>
+          </MenubarContent>
+        </MenubarMenu>
+      </Menubar>
+
+      {/* ModeToggle aligned to the right */}
+      <div className="ml-auto">
+        <ModeToggle />
+      </div>
+    </div>
+
+    /* <div>
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
@@ -56,7 +133,7 @@ const Navbar = () => {
           <ModeToggle />
         </div>
       </NavigationMenu>
-    </div>
+    </div> */
   );
 };
 
