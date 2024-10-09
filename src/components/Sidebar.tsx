@@ -11,7 +11,7 @@ const artItems = [
   { name: "Hubris", date: "2024", href: "/hubris" },
   { name: "Penance", date: "2024", href: "/penance" },
   { name: "Tofu", date: "2021", href: "/tofu" },
-  { name: "Poop", date: "2022", href: "/tofu" },
+  { name: "Ball for Bouncing", date: "2022", href: "/ballforbouncing" },
 ];
 
 const devItems = [

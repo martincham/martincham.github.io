@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { ModeToggle } from "@/components/ModeToggle.tsx";
+import { Button } from "@/components/ui/button.tsx";
 
-/* import Navbar from "./components/Navbar.tsx"; */
 import Home from "@/Home.tsx";
 import Sidebar from "./components/Sidebar.tsx";
 import Hubris from "@/pages/art/Hubris.tsx";
 import Penance from "@/pages/art/Penance.tsx";
 import BallForBouncing from "@/pages/art/BallForBouncing.tsx";
 import Tofu from "@/pages/art/Tofu.tsx";
-import { ModeToggle } from "@/components/ModeToggle.tsx";
-import { Button } from "@/components/ui/button.tsx";
+import Nba from "@/pages/dev/NBA.tsx";
+import HubrisDev from "@/pages/dev/HubrisDev.tsx";
+import Websites from "@/pages/dev/Websites.tsx";
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,6 +92,9 @@ const App: React.FC = () => {
               <Route path="/penance" element={<Penance />} />
               <Route path="/ballforbouncing" element={<BallForBouncing />} />
               <Route path="/tofu" element={<Tofu />} />
+              <Route path="/nba" element={<Nba />} />
+              <Route path="/hubrisdev" element={<HubrisDev />} />
+              <Route path="/websites" element={<Websites />} />
             </Routes>
           </div>
         </Router>
