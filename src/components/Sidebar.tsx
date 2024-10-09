@@ -20,7 +20,12 @@ const devItems = [
   { name: "Websites", date: "'16-Present", href: "/websites" },
 ];
 
-const Sidebar: React.FC = () => {
+interface SidebarProps {
+  isOpen: boolean;
+  toggleSidebar: () => void;
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
   return (
     <nav className="flex flex-col space-y-2">
       <Accordion type="multiple" collapsible className="w-full">
@@ -30,6 +35,8 @@ const Sidebar: React.FC = () => {
           {artItems.map((item, index) => (
             <Link
               to={item.href}
+              onClick={toggleSidebar}
+              key={index}
               className="hover:bg-zinc-200 dark:hover:bg-zinc-800"
             >
               <AccordionContent
@@ -50,6 +57,8 @@ const Sidebar: React.FC = () => {
           {devItems.map((item, index) => (
             <Link
               to={item.href}
+              onClick={toggleSidebar}
+              key={index}
               className="hover:bg-zinc-200 dark:hover:bg-zinc-800"
             >
               <AccordionContent

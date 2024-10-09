@@ -38,13 +38,13 @@ const App: React.FC = () => {
                 </Link>
                 <div className="flex justify-end space-x-2">
                   {/* Mode Toggle */}
-                  <div className="ml-auto">
+                  <div className="ml-auto z-50">
                     <ModeToggle />
                   </div>
                   {/* Mobile Hamburger Menu */}
                   <Button
                     variant="outline"
-                    className="ml-auto p-2 md:hidden bg-white dark:bg-black"
+                    className="ml-auto p-2 md:hidden bg-white dark:bg-black z-50"
                     onClick={toggleSidebar}
                     aria-label="Toggle sidebar"
                   >
@@ -76,14 +76,14 @@ const App: React.FC = () => {
           <div className="flex">
             {/* Sidebar Menu */}
             <div
-              className={`fixed md:relative md:translate-x-0 top-0 left-0 h-full w-64  transition-all duration-200  ${
+              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-64 transition-all duration-200 ${
                 isOpen
-                  ? "translate-x-0 bg-gray-50 dark:bg-zinc-950"
-                  : "-translate-x-full "
+                  ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 "
+                  : "translate-x-full duration-0"
               } md:flex md:flex-col`}
             >
-              <br className="text-xl font-semibold mb-4 md:hidden"></br>
-              <Sidebar />
+              <div className="py-10 md:hidden"></div>
+              <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
             </div>
             {/* Content */}
             <Routes>
