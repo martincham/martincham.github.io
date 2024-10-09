@@ -21,7 +21,6 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full">
-      {/* Menubar content on the left */}
       <Menubar>
         <MenubarMenu>
           <MenubarTrigger>Art Work</MenubarTrigger>
