@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 /* import Navbar from "./components/Navbar.tsx"; */
-import Home from "@/pages/Home.tsx";
+import Home from "@/Home.tsx";
 import Sidebar from "./components/Sidebar.tsx";
 import Hubris from "@/pages/art/Hubris.tsx";
 import Penance from "@/pages/art/Penance.tsx";
@@ -29,9 +29,11 @@ const App: React.FC = () => {
               {/* Header Bar */}
               <div className="flex items-center justify-between">
                 {/* Title */}
-                <h1 className="text-2xl font-bold hover:text-zinc-500 ">
-                  <a href="/">Martin Chamberlin</a>
-                </h1>
+                <Link to="/">
+                  <h1 className="text-2xl font-bold hover:text-zinc-500 ">
+                    Martin Chamberlin
+                  </h1>
+                </Link>
                 <div className="flex justify-end space-x-2">
                   {/* Mode Toggle */}
                   <div className="ml-auto">
