@@ -4,15 +4,17 @@ import "./App.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ModeToggle.tsx";
 import { Button } from "@/components/ui/button.tsx";
-
-import TitleAnimation from "./components/TitleAnimation";
+import Sidebar from "./components/Sidebar.tsx";
 
 import Home from "@/Home.tsx";
-import Sidebar from "./components/Sidebar.tsx";
 import Hubris from "@/pages/art/Hubris.tsx";
 import Penance from "@/pages/art/Penance.tsx";
 import BallForBouncing from "@/pages/art/BallForBouncing.tsx";
 import Tofu from "@/pages/art/Tofu.tsx";
+import ExitSign from "@/pages/art/ExitSign.tsx";
+import CeilingTile from "@/pages/art/CeilingTile.tsx";
+import IroningBoard from "@/pages/art/IroningBoard.tsx";
+
 import Nba from "@/pages/dev/NBA.tsx";
 import HubrisDev from "@/pages/dev/HubrisDev.tsx";
 import Websites from "@/pages/dev/Websites.tsx";
@@ -98,6 +100,9 @@ const App: React.FC = () => {
                 <Route path="/nba" element={<Nba />} />
                 <Route path="/hubrisdev" element={<HubrisDev />} />
                 <Route path="/websites" element={<Websites />} />
+                <Route path="/exitsign" element={<ExitSign />} />
+                <Route path="/ceilingtile" element={<CeilingTile />} />
+                <Route path="/ironingboard" element={<IroningBoard />} />
               </Routes>
             </div>
           </div>

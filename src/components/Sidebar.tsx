@@ -10,8 +10,11 @@ import {
 const artItems = [
   { name: "Hubris", date: "2024", href: "/hubris" },
   { name: "Penance", date: "2024", href: "/penance" },
-  { name: "Tofu", date: "2021", href: "/tofu" },
+  { name: "Ironing Board", date: "2023", href: "/ironingboard" },
+  { name: "Exit Sign", date: "2022", href: "/exitsign" },
+  { name: "Ceiling Tile", date: "2022", href: "/ceilingtile" },
   { name: "Ball for Bouncing", date: "2022", href: "/ballforbouncing" },
+  { name: "Tofu", date: "2021", href: "/tofu" },
 ];
 
 const devItems = [

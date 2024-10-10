@@ -4,7 +4,7 @@ import { Separator } from "@/components/ui/separator";
 const Hubris: React.FC = () => {
   return (
     <div className="container mx-auto p-6">
-      <section className="container mx-auto py-12">
+      <section className="container mx-auto py-2">
         <img
           src="/HQPictures/Hubris/hubrisBlur.webp"
           alt="Hubris"
