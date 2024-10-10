@@ -6,7 +6,7 @@ const Hubris: React.FC = () => {
     <div className="container mx-auto p-6">
       <section className="container mx-auto py-12">
         <img
-          src="/HQPictures/Hubris/hubrisBlur.JPG"
+          src="/HQPictures/Hubris/hubrisBlur.webp"
           alt="Hubris"
           className="w-full h-full"
         />

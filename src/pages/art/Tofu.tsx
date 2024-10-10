@@ -1,33 +1,19 @@
 import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+
 import { Separator } from "@/components/ui/separator";
 
 const Tofu: React.FC = () => {
   return (
     <div className="container mx-auto p-6">
-      <Card>
-        <CardHeader>
-          <h1 className="text-3xl font-bold">Art Project Title</h1>
-        </CardHeader>
-        <CardContent>
-          <p className="text-lg text-gray-700">
-            Welcome to my art project page! Here you'll find all the details
-            about my latest creations.
-          </p>
-          {/* You can add more content here, like images or galleries */}
-        </CardContent>
-        <CardFooter>
-          <Button onClick={() => alert("Contact form coming soon!")}>
-            Contact Me
-          </Button>
-        </CardFooter>
-      </Card>
+      <section className="container mx-auto py-12">
+        <img
+          src="/HQPictures/Tofu/tofuDrip.webp"
+          alt="Tofu"
+          className="w-full h-full"
+        />
+        <Separator className="my-4" />
+        <a>Tofu. 2021. Mixed media.</a>
+      </section>
     </div>
   );
 };

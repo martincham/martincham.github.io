@@ -6,7 +6,7 @@ const Penance: React.FC = () => {
     <div className="container mx-auto p-6">
       <section className="container mx-auto py-12">
         <img
-          src="/HQPictures/Penance/rockBoxEdited.jpg"
+          src="/HQPictures/Penance/rockBoxEdited.webp"
           alt="Penance"
           className="w-full h-full"
         />
