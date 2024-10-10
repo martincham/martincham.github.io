@@ -23,9 +23,12 @@ const devItems = [
   { name: "Websites", date: "'16-Present", href: "/websites" },
 ];
 
+const aboutItems = [{ name: "Artist Statement", date: "", href: "/artist" }];
+
 const sidebarItems = [
   { name: "Art Projects", items: artItems },
   { name: "Dev Projects", items: devItems },
+  { name: "About", items: aboutItems },
 ];
 
 interface SidebarProps {

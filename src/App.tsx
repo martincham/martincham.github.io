@@ -19,6 +19,8 @@ import Nba from "@/pages/dev/NBA.tsx";
 import HubrisDev from "@/pages/dev/HubrisDev.tsx";
 import Websites from "@/pages/dev/Websites.tsx";
 
+import ArtistStatment from "@/pages/about/ArtistStatement.tsx";
+
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -103,6 +105,7 @@ const App: React.FC = () => {
                 <Route path="/exitsign" element={<ExitSign />} />
                 <Route path="/ceilingtile" element={<CeilingTile />} />
                 <Route path="/ironingboard" element={<IroningBoard />} />
+                <Route path="/artist" element={<ArtistStatment />} />
               </Routes>
             </div>
           </div>
