@@ -20,6 +20,11 @@ const devItems = [
   { name: "Websites", date: "'16-Present", href: "/websites" },
 ];
 
+const sidebarItems = [
+  { name: "Art Projects", items: artItems },
+  { name: "Dev Projects", items: devItems },
+];
+
 interface SidebarProps {
   isOpen: boolean;
   toggleSidebar: () => void;
@@ -29,50 +34,30 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
   return (
     <nav className="flex flex-col space-y-2">
       <Accordion type="multiple" collapsible className="w-full">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Art Projects</AccordionTrigger>
-          {/* Art Projects */}
-          {artItems.map((item, index) => (
-            <Link
-              to={item.href}
-              onClick={toggleSidebar}
-              key={index}
-              className="hover:bg-zinc-200 dark:hover:bg-zinc-800"
-            >
-              <AccordionContent
+        {/* Art Projects */}
+        {sidebarItems.map((sidebarItem, index) => (
+          <AccordionItem value={"item-" + index} key={index}>
+            <AccordionTrigger>{sidebarItem.name}</AccordionTrigger>
+            {sidebarItem.items.map((item, index) => (
+              <Link
+                to={item.href}
+                onClick={toggleSidebar}
                 key={index}
-                className="rounded hover:bg-zinc-200 dark:hover:bg-zinc-800"
+                className="hover:bg-zinc-200 dark:hover:bg-zinc-800"
               >
-                <div className="justify-between flex" key={index}>
-                  <div>{item.name}</div>
-                  <div className="italic opacity-50">{item.date}</div>
-                </div>
-              </AccordionContent>
-            </Link>
-          ))}
-        </AccordionItem>
-        <AccordionItem value="item-2">
-          <AccordionTrigger>Coding Projects</AccordionTrigger>
-          {/* Dev Projects */}
-          {devItems.map((item, index) => (
-            <Link
-              to={item.href}
-              onClick={toggleSidebar}
-              key={index}
-              className="hover:bg-zinc-200 dark:hover:bg-zinc-800"
-            >
-              <AccordionContent
-                key={index}
-                className="rounded hover:bg-zinc-200 dark:hover:bg-zinc-800"
-              >
-                <div className="justify-between flex" key={index}>
-                  <div>{item.name}</div>
-                  <div className="italic opacity-50">{item.date}</div>
-                </div>
-              </AccordionContent>
-            </Link>
-          ))}
-        </AccordionItem>
+                <AccordionContent
+                  key={index}
+                  className="rounded hover:bg-zinc-200 dark:hover:bg-zinc-800"
+                >
+                  <div className="justify-between flex" key={index}>
+                    <div>{item.name}</div>
+                    <div className="italic opacity-50">{item.date}</div>
+                  </div>
+                </AccordionContent>
+              </Link>
+            ))}
+          </AccordionItem>
+        ))}
       </Accordion>
     </nav>
   );

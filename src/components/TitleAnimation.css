@@ -1,0 +1,15 @@
+.title-container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ff00;
+    transition: transform 0.1s ease-out;
+    display: inline-block;
+    will-change: transform;
+    font-family: "Courier New", Courier, monospace;
+}

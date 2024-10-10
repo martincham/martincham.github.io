@@ -1,4 +1,5 @@
 import React from "react";
+import { Separator } from "@/components/ui/separator";
 
 const Penance: React.FC = () => {
   return (
@@ -9,6 +10,7 @@ const Penance: React.FC = () => {
           alt="Penance"
           className="w-full h-full"
         />
+        <Separator className="my-4" />
         <a>Penance. 2024. Granite, wood, and luggage hardware.</a>
       </section>
     </div>

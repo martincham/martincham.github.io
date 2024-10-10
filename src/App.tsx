@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ModeToggle.tsx";
 import { Button } from "@/components/ui/button.tsx";
 
+import TitleAnimation from "./components/TitleAnimation";
+
 import Home from "@/Home.tsx";
 import Sidebar from "./components/Sidebar.tsx";
 import Hubris from "@/pages/art/Hubris.tsx";
@@ -32,7 +34,7 @@ const App: React.FC = () => {
               <div className="flex items-center justify-between">
                 {/* Title */}
                 <Link to="/">
-                  <h1 className="text-2xl font-bold hover:text-zinc-500 ">
+                  <h1 className="text-2xl  hover:text-zinc-500 dark:color-green-600 ">
                     Martin Chamberlin
                   </h1>
                 </Link>
@@ -65,7 +67,7 @@ const App: React.FC = () => {
                 {/* Overlay for Mobile */}
                 {isOpen && (
                   <div
-                    className="fixed inset-0 bg-black opacity-50 md:hidden"
+                    className="fixed inset-0 bg-zinc-900 opacity-50 md:hidden z-40"
                     onClick={toggleSidebar}
                   ></div>
                 )}
@@ -73,29 +75,31 @@ const App: React.FC = () => {
             </div>
           </div>
           {/* Sidebar and Content */}
-          <div className="flex">
+          <div className="flex z-30">
             {/* Sidebar Menu */}
             <div
-              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-64 transition-all duration-200 ${
+              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-64 transition-all duration-200 z-40 ${
                 isOpen
-                  ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 "
-                  : "translate-x-full duration-0"
+                  ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent"
+                  : "translate-x-full duration-0 opacity-0 md:opacity-100"
               } md:flex md:flex-col`}
             >
               <div className="py-10 md:hidden"></div>
               <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
             </div>
             {/* Content */}
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/hubris" element={<Hubris />} />
-              <Route path="/penance" element={<Penance />} />
-              <Route path="/ballforbouncing" element={<BallForBouncing />} />
-              <Route path="/tofu" element={<Tofu />} />
-              <Route path="/nba" element={<Nba />} />
-              <Route path="/hubrisdev" element={<HubrisDev />} />
-              <Route path="/websites" element={<Websites />} />
-            </Routes>
+            <div className="flex w-full max-w-screen-lg mx-auto p-4">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/hubris" element={<Hubris />} />
+                <Route path="/penance" element={<Penance />} />
+                <Route path="/ballforbouncing" element={<BallForBouncing />} />
+                <Route path="/tofu" element={<Tofu />} />
+                <Route path="/nba" element={<Nba />} />
+                <Route path="/hubrisdev" element={<HubrisDev />} />
+                <Route path="/websites" element={<Websites />} />
+              </Routes>
+            </div>
           </div>
         </Router>
       </ThemeProvider>

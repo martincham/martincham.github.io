@@ -18,7 +18,7 @@
 }
 
 a {
-    font-weight: 500;
+    font-weight: 400;
     /*color: #646cff; */
     text-decoration: inherit;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-    font-size: 3.2em;
+    font-size: 3em;
     line-height: 1.1;
 }
 
@@ -130,6 +130,29 @@ button:focus-visible {
     .dark {
         --primary-font: "Monospace", monospace;
         --secondary-font: "Times New Roman", serif;
+        --heading-font: "Courier New", monospace;
+        --heading-color: #00ff00;
+        --heading-style: bold;
+    }
+}
+/* Chart Colors */
+@layer base {
+    :root {
+        --chart-1: 220 60% 60%;
+        --chart-2: 160 60% 75%;
+        --chart-3: 30 60% 65%;
+        --chart-4: 280 75% 75%;
+        --chart-5: 340 75% 70%;
+        --chart-6: 100 55% 70%;
+    }
+
+    .dark {
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+        --chart-6: 100 65% 40%;
     }
 }
 
@@ -140,5 +163,10 @@ button:focus-visible {
     body {
         @apply bg-background text-foreground;
         font-family: var(--primary-font);
+        h1 {
+            font-family: var(--heading-font);
+            color: var(--heading-color);
+            font-weight: var(--heading-style);
+        }
     }
 }
