@@ -26,6 +26,8 @@ const devItems = [
 const aboutItems = [
   { name: "Artist Statement", date: "", href: "/artist" },
   { name: "About Me", date: "", href: "/about" },
+  { name: "Resume", date: "", href: "/resume" },
+  { name: "Teaching", date: "", href: "/teaching" },
 ];
 
 const sidebarItems = [
