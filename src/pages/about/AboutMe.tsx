@@ -22,11 +22,13 @@ const AboutMe: React.FC = () => {
             </div>
             <Separator orientation="vertical" />
             <div>
-              <a href="">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/martincham/">LinkedIn</a>
             </div>
             <Separator orientation="vertical" />
             <div>
-              <a href="">Instagram</a>
+              <a href="https://www.instagram.com/martin__chamberlin/">
+                Instagram
+              </a>
             </div>
           </div>
         </div>
