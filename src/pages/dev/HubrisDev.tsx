@@ -12,11 +12,17 @@ const HubrisDev: React.FC = () => {
           pedestal to control the movement of the weight and to synchronize
           through BluetoothLowEnergy.
         </a>
+        <Separator className="my-2" />
+        <img
+          src="/HQPictures/Hubris/insideHubris.webp"
+          alt="Hubris interior"
+          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
+        />
 
         <Separator className="my-2" />
         {/* GitHub Card */}
-        <div className="mx-auto flex  flex-col items-center justify-center gap-6 p-4 sm:p-6 lg:p-8">
-          <div className="grid w-full gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mx-auto flex  flex-col items-center justify-center gap-6  sm:p-6 lg:p-8">
+          <div className="grid w-full gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
             <GitHubCard
               repoName="Hubris Robotics"
               description="C++ Arduino code for synchronized pedestal sculpture.."

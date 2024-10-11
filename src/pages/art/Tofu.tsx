@@ -10,20 +10,20 @@ const Tofu: React.FC = () => {
           controls
           autoPlay
           loop
-          className="w-full h-auto max-w-[500px]  object-contain"
+          className="w-full h-auto max-w-[500px]  object-contain mb-4"
         >
           <source src="/HQPictures/Tofu/tofu.mp4" type="video/mp4" />
           <source src="/HQPictures/Tofu/tofu.ogg" type="video/ogg" />
           Your browser does not support the video tag.
         </video>
-        <Separator className="my-4" />
-        <a>Tofu. 2021. Mixed media.</a>
-        <Separator className="my-4" />
+
         <img
           src="/HQPictures/Tofu/tofuDrip.webp"
           alt="Tofu"
           className="w-full h-auto max-w-[500px]  object-contain"
         />
+        <Separator className="my-4" />
+        <a>Tofu. 2021. Mixed media.</a>
       </section>
     </div>
   );
