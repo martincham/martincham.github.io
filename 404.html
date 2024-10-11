@@ -1,12 +1,20 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="UTF-8" />
+        <title>Redirecting...</title>
         <script type="text/javascript">
-            // Script to redirect 404s to index.html
-            var redirectTo =
-                window.location.pathname.replace(/[^\/]+$/, "") + "index.html";
-            window.location.replace(redirectTo);
+            // Redirect to index.html and append the current path
+            const redirectUrl =
+                "/?redirect=" + encodeURIComponent(window.location.pathname);
+            window.location.replace(redirectUrl);
         </script>
     </head>
-    <body></body>
+    <body>
+        <h1>Redirecting...</h1>
+        <p>
+            If you are not redirected,
+            <a id="redirectLink" href="/">click here</a>.
+        </p>
+    </body>
 </html>
