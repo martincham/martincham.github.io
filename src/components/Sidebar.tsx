@@ -18,7 +18,7 @@ const artItems = [
 ];
 
 const devItems = [
-  { name: "Hubris Robotics", date: "2024", href: "/hubris" },
+  { name: "Hubris Robotics", date: "2024", href: "/hubrisdev" },
   { name: "NBA Analyzer", date: "'23-Present", href: "/nba" },
   { name: "Websites", date: "'16-Present", href: "/websites" },
 ];

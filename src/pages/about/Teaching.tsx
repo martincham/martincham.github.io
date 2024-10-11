@@ -1,7 +1,7 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
 
-const AboutMe: React.FC = () => {
+const Teaching: React.FC = () => {
   return (
     <div className="container mx-auto p-6">
       <section className="container mx-auto py-2">
@@ -51,4 +51,4 @@ const AboutMe: React.FC = () => {
   );
 };
 
-export default AboutMe;
+export default Teching;

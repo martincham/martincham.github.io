@@ -21,6 +21,8 @@ import Websites from "@/pages/dev/Websites.tsx";
 
 import ArtistStatment from "@/pages/about/ArtistStatement.tsx";
 import AboutMe from "@/pages/about/AboutMe.tsx";
+import Resume from "@/pages/about/Resume.tsx";
+import Teaching from "@/pages/about/Teaching.tsx";
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -100,14 +102,18 @@ const App: React.FC = () => {
                 <Route path="/penance" element={<Penance />} />
                 <Route path="/ballforbouncing" element={<BallForBouncing />} />
                 <Route path="/tofu" element={<Tofu />} />
-                <Route path="/nba" element={<Nba />} />
-                <Route path="/hubrisdev" element={<HubrisDev />} />
-                <Route path="/websites" element={<Websites />} />
                 <Route path="/exitsign" element={<ExitSign />} />
                 <Route path="/ceilingtile" element={<CeilingTile />} />
                 <Route path="/ironingboard" element={<IroningBoard />} />
+
+                <Route path="/nba" element={<Nba />} />
+                <Route path="/websites" element={<Websites />} />
+                <Route path="/hubrisdev" element={<HubrisDev />} />
+
                 <Route path="/artist" element={<ArtistStatment />} />
                 <Route path="/about" element={<AboutMe />} />
+                <Route path="/resume" element={<Resume />} />
+                <Route path="/teaching" element={<Teaching />} />
               </Routes>
             </div>
           </div>
