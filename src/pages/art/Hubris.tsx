@@ -8,7 +8,7 @@ const Hubris: React.FC = () => {
         <img
           src="/HQPictures/Hubris/hubrisBlur.webp"
           alt="Hubris"
-          className="w-full h-full"
+          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
         />
         <Separator className="my-4" />
         <a>Hubris. 2024. Mixed media and robotics.</a>

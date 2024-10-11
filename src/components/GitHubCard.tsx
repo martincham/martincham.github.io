@@ -21,7 +21,7 @@ const GitHubCard: React.FC<GitHubCardProps> = ({
   repoLink,
 }) => {
   return (
-    <Card className="min-w-80 max-w-lg p-1.5 transition duration-300 hover:shadow-lg">
+    <Card className=" max-w-lg p-1.5 transition duration-300 hover:shadow-lg">
       <CardHeader>
         <div className="flex items-center">
           <FaGithub className="text-3xl text-gray-800 dark:text-white mr-2" />

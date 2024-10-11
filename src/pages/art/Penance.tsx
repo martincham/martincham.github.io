@@ -8,7 +8,7 @@ const Penance: React.FC = () => {
         <img
           src="/HQPictures/Penance/rockBoxEdited.webp"
           alt="Penance"
-          className="w-full h-full"
+          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
         />
         <Separator className="my-4" />
         <a>Penance. 2024. Granite, wood, and luggage hardware.</a>

@@ -9,7 +9,7 @@ const BallForBouncing: React.FC = () => {
         <img
           src="/HQPictures/Basketball/basketball.webp"
           alt="Ball for Bouncing"
-          className="w-full h-full"
+          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
         />
         <Separator className="my-4" />
         <a>Ball for Bouncing. 2021. Basketball and springs.</a>

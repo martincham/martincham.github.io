@@ -20,6 +20,7 @@ import HubrisDev from "@/pages/dev/HubrisDev.tsx";
 import Websites from "@/pages/dev/Websites.tsx";
 
 import ArtistStatment from "@/pages/about/ArtistStatement.tsx";
+import AboutMe from "@/pages/about/AboutMe.tsx";
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -82,7 +83,7 @@ const App: React.FC = () => {
           <div className="flex z-30">
             {/* Sidebar Menu */}
             <div
-              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-64 transition-all duration-200 z-40 ${
+              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-64 dark:w-72 transition-all duration-200 z-40 ${
                 isOpen
                   ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent"
                   : "translate-x-full duration-0 opacity-0 md:opacity-100"
@@ -106,6 +107,7 @@ const App: React.FC = () => {
                 <Route path="/ceilingtile" element={<CeilingTile />} />
                 <Route path="/ironingboard" element={<IroningBoard />} />
                 <Route path="/artist" element={<ArtistStatment />} />
+                <Route path="/about" element={<AboutMe />} />
               </Routes>
             </div>
           </div>

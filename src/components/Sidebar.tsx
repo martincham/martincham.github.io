@@ -23,7 +23,10 @@ const devItems = [
   { name: "Websites", date: "'16-Present", href: "/websites" },
 ];
 
-const aboutItems = [{ name: "Artist Statement", date: "", href: "/artist" }];
+const aboutItems = [
+  { name: "Artist Statement", date: "", href: "/artist" },
+  { name: "About Me", date: "", href: "/about" },
+];
 
 const sidebarItems = [
   { name: "Art Projects", items: artItems },
@@ -39,7 +42,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
   return (
     <nav className="flex flex-col space-y-2">
-      <Accordion type="multiple" collapsible className="w-full">
+      <Accordion type="multiple" className="w-full">
         {/* Art Projects */}
         {sidebarItems.map((sidebarItem, index) => (
           <AccordionItem value={"item-" + index} key={index}>
