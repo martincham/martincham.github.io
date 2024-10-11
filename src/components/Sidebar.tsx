@@ -24,15 +24,15 @@ const devItems = [
 ];
 
 const aboutItems = [
-  { name: "Artist Statement", date: "", href: "/artist" },
   { name: "About Me", date: "", href: "/about" },
+  { name: "Artist Statement", date: "", href: "/artist" },
   { name: "Resume", date: "", href: "/resume" },
   { name: "Teaching", date: "", href: "/teaching" },
 ];
 
 const sidebarItems = [
-  { name: "Art Projects", items: artItems },
-  { name: "Dev Projects", items: devItems },
+  { name: "Sculpture", items: artItems },
+  { name: "Technical Projects", items: devItems },
   { name: "About", items: aboutItems },
 ];
 
