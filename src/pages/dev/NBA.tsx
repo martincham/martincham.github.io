@@ -9,7 +9,6 @@ import {
 import GitHubCard from "@/components/GitHubCard";
 import { NbaChart } from "@/charts/NbaChart";
 import { NbaChartPG } from "@/charts/NbaChartPG";
-import { Separator } from "@radix-ui/react-menubar";
 
 const Nba: React.FC = () => {
   return (

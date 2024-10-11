@@ -48,7 +48,7 @@ const Websites: React.FC = () => {
           <GitHubCard
             repoName="This Website"
             description="Built with React,TypeScript/JavaScript, Tailwind CSS, and shadcn"
-            repoLink="https://github.com/martincham/espn-nba-fantasy-analyzer"
+            repoLink="https://github.com/martincham/martincham.github.io"
           />
         </div>
       </div>

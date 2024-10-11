@@ -9,13 +9,6 @@ import {
   ChartLegend,
   ChartLegendContent,
 } from "@/components/ui/chart";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
 
 const chartData = [
   {

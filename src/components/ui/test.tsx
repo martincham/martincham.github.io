@@ -13,7 +13,7 @@ const NavigationMenu = React.forwardRef<
     ref={ref}
     className={cn(
       "relative z-10 flex max-w-max flex-1 items-center justify-center",
-      className
+      className,
     )}
     {...props}
   >
@@ -32,7 +32,7 @@ const NavigationMenuList = React.forwardRef<
     ref={ref}
     className={cn(
       "group flex flex-1 list-none items-center justify-center space-x-1",
-      className
+      className,
     )}
     {...props}
   />
@@ -40,7 +40,10 @@ const NavigationMenuList = React.forwardRef<
 NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
 
 // Single NavigationMenuItem
-const NavigationMenuItem = ({ className, children, ...props }) => (
+const NavigationMenuItem: React.FC<{
+  className?: string;
+  children?: string;
+}> = ({ className, children, ...props }) => (
   <NavigationMenuPrimitive.Item
     className={cn("relative", className)} // Ensure relative positioning here
     {...props}
@@ -51,7 +54,7 @@ const NavigationMenuItem = ({ className, children, ...props }) => (
 
 // Style for the trigger button
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+  "group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50",
 );
 
 // NavigationMenuTrigger with the dropdown arrow icon
@@ -82,7 +85,7 @@ const NavigationMenuContent = React.forwardRef<
     ref={ref}
     className={cn(
       "absolute left-0 top-full mt-2 z-50 w-full bg-white shadow-lg data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out md:w-auto",
-      className
+      className,
     )}
     {...props}
   />

@@ -1,5 +1,4 @@
 import React from "react";
-import { Separator } from "@/components/ui/separator";
 
 const Resume: React.FC = () => {
   return (
