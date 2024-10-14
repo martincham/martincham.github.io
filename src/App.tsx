@@ -47,7 +47,7 @@ const App: React.FC = () => {
                 </Link>
                 <div className="flex justify-end space-x-2">
                   {/* Mode Toggle */}
-                  <div className="ml-auto z-50">
+                  <div className="ml-auto z-50 flex items-center justify-center">
                     <DarkSwitch />
                   </div>
                   {/* Mobile Hamburger Menu */}
