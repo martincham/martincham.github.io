@@ -15,8 +15,8 @@ const Websites: React.FC = () => {
     <div>
       <p>
         I built my first simple HTML/CSS portfolio website in 2016. Since then,
-        I expaned my web-dev toolkit with JavaScipt and TypeScript in 2019. Most
-        recently I built this website using a modern tech-stack.
+        I expanded my web-dev toolkit with JavaScipt and TypeScript in 2019.
+        Most recently I built this website using a modern tech-stack.
       </p>
       <Separator className="my-2" />
       <div className="mx-auto flex  flex-col items-center justify-center gap-6 p-4 sm:p-6 lg:p-8">
@@ -46,7 +46,7 @@ const Websites: React.FC = () => {
             </CardFooter>
           </Card>
           <GitHubCard
-            repoName="This Website"
+            repoName="martinchamberlin.com"
             description="Built with React,TypeScript/JavaScript, Tailwind CSS, and shadcn"
             repoLink="https://github.com/martincham/martincham.github.io"
           />
