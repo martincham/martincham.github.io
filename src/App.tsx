@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { ModeToggle } from "@/components/ModeToggle.tsx";
+import { DarkSwitch } from "@/components/DarkSwitch.tsx";
 import { Button } from "@/components/ui/button.tsx";
 import Sidebar from "./components/Sidebar.tsx";
 
@@ -41,14 +41,14 @@ const App: React.FC = () => {
               <div className="flex items-center justify-between">
                 {/* Title */}
                 <Link to="/">
-                  <h1 className="text-2xl  hover:text-zinc-500 dark:color-green-600 ">
+                  <h1 className="text-4xl  hover:text-zinc-500 dark:color-green-600 font-light">
                     Martin Chamberlin
                   </h1>
                 </Link>
                 <div className="flex justify-end space-x-2">
                   {/* Mode Toggle */}
                   <div className="ml-auto z-50">
-                    <ModeToggle />
+                    <DarkSwitch />
                   </div>
                   {/* Mobile Hamburger Menu */}
                   <Button
@@ -85,7 +85,7 @@ const App: React.FC = () => {
           <div className="flex z-30">
             {/* Sidebar Menu */}
             <div
-              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-64 dark:w-72 transition-all duration-200 z-40 ${
+              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-64  transition-all duration-200 z-40 ${
                 isOpen
                   ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent"
                   : "translate-x-full duration-0 opacity-0 md:opacity-100"

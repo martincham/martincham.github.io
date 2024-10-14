@@ -128,11 +128,13 @@ button:focus-visible {
         --secondary-font: "Avenir", sans-serif;
     }
     .dark {
+        /*
         --primary-font: "Monospace", monospace;
         --secondary-font: "Times New Roman", serif;
         --heading-font: "Courier New", monospace;
         --heading-color: #00ff00;
         --heading-style: bold;
+        */
     }
 }
 /* Chart Colors */
