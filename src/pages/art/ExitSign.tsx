@@ -11,7 +11,7 @@ const ExitSign: React.FC = () => {
           className="w-full h-auto max-w-screen max-h-[800px] object-contain"
         />
         <Separator className="my-4" />
-        <a>Exit Sign. 2022. Acrylic on canvas.</a>
+        <a>Exit Sign. 2022. Acrylic on canvas. 7x12"</a>
       </section>
     </div>
   );

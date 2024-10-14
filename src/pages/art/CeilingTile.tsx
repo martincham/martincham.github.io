@@ -11,7 +11,7 @@ const CeilingTile: React.FC = () => {
           className="w-full h-auto max-w-screen max-h-[800px] object-contain"
         />
         <Separator className="my-4" />
-        <a>Ceiling Tile. 2022. Oil on canvas.</a>
+        <a>Ceiling Tile. 2022. Oil on canvas. 24 x 24"</a>
       </section>
     </div>
   );
