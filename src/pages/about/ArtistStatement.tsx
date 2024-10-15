@@ -8,11 +8,9 @@ const ArtistStatment: React.FC = () => {
         <p>
           I’m interested in human-made objects, the peculiar ways that we
           arrange matter to meet our needs. My work is an exploration of the
-          functionality of the objects that we use in our lives, by asking “if I
-          remove the functionality of an everyday object, does it turn into an
-          art object?” I undermine the key purpose of a given object, through
-          material or functional transformation, resulting in something
-          dysfunctional and absurd.
+          functionality of the objects that we use in our lives. I undermine the
+          key purpose of a given object, through material or functional
+          transformation, resulting in something dysfunctional and absurd.
           <br /> <br />
           The ‘art object’ is generally regarded as the antithesis of the
           ‘functional object’; the ‘art object’ is to be looked at but not used.

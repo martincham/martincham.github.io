@@ -12,8 +12,8 @@ import { NbaChartPG } from "@/charts/NbaChartPG";
 
 const Nba: React.FC = () => {
   return (
-    <div className="mx-auto flex  flex-col items-center justify-center gap-6 p-4 sm:p-6 lg:p-8">
-      <div className="grid w-full gap-6 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+    <div className="mx-auto flex w-full flex-col items-center justify-center gap-6 p-4 sm:p-6 lg:p-8">
+      <div className="grid max-w- gap-6 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 chart-wrapper">
         {/* NBA Chart Cards */}
         <Card className="lg:max-w-md" x-chunk="charts-01-chunk-0">
           <CardHeader>

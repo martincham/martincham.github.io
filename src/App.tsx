@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+/* Components */
 import { ThemeProvider } from "@/components/theme-provider";
 import { DarkSwitch } from "@/components/DarkSwitch.tsx";
 import { Button } from "@/components/ui/button.tsx";
-import Sidebar from "./components/Sidebar.tsx";
-
+import Sidebar from "@/components/Sidebar.tsx";
+/* Art */
 import Home from "@/Home.tsx";
 import Hubris from "@/pages/art/Hubris.tsx";
 import Penance from "@/pages/art/Penance.tsx";
@@ -14,11 +15,11 @@ import Tofu from "@/pages/art/Tofu.tsx";
 import ExitSign from "@/pages/art/ExitSign.tsx";
 import CeilingTile from "@/pages/art/CeilingTile.tsx";
 import IroningBoard from "@/pages/art/IroningBoard.tsx";
-
+/* Dev */
 import Nba from "@/pages/dev/NBA.tsx";
 import HubrisDev from "@/pages/dev/HubrisDev.tsx";
 import Websites from "@/pages/dev/Websites.tsx";
-
+/* About */
 import ArtistStatment from "@/pages/about/ArtistStatement.tsx";
 import AboutMe from "@/pages/about/AboutMe.tsx";
 import Resume from "@/pages/about/Resume.tsx";
@@ -35,17 +36,17 @@ const App: React.FC = () => {
     <>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
         <Router>
-          <div>
-            <div>
+          <div className="md:p-8 p-2">
+            <div className="md:h-auto md:items-start md:justify-start  md:pt-0">
               {/* Header Bar */}
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between flex-col md:flex-row">
                 {/* Title */}
                 <Link to="/">
-                  <h1 className="text-4xl  hover:text-zinc-500 dark:color-green-600 font-light">
+                  <h1 className="md:text-4xl text-3xl hover:text-zinc-500 dark:color-green-600 font-light mt-12 md:mt-0">
                     Martin Chamberlin
                   </h1>
                 </Link>
-                <div className="flex justify-end space-x-2">
+                <div className="flex justify-end space-x-2 ml-auto">
                   {/* Mode Toggle */}
                   <div className="ml-auto z-50 flex items-center justify-center">
                     <DarkSwitch />
@@ -85,17 +86,17 @@ const App: React.FC = () => {
           <div className="flex z-30">
             {/* Sidebar Menu */}
             <div
-              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-64  transition-all duration-200 z-40 ${
+              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-52 md:w-72 transition-all duration-200 z-40 ${
                 isOpen
                   ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent"
                   : "translate-x-full duration-0 opacity-0 md:opacity-100"
-              } md:flex md:flex-col`}
+              } md:flex md:flex-col overflow-y-auto`}
             >
               <div className="py-10 md:hidden"></div>
               <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
             </div>
             {/* Content */}
-            <div className="flex w-full max-w-screen-lg mx-auto p-4">
+            <div className="flex w-full max-w-screen-lg mx-auto p-0 md:p-4">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/hubris" element={<Hubris />} />
