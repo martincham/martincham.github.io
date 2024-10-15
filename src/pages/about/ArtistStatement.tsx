@@ -22,7 +22,12 @@ const ArtistStatment: React.FC = () => {
         <img
           src="Pictures/objectAesthetic.webp"
           alt="Drawing"
-          className="max-w-xs w-full mx-auto "
+          className="max-w-xs w-full mx-auto block dark:hidden"
+        />
+        <img
+          src="Pictures/darkObjectAesthetic.webp"
+          alt="Drawing"
+          className="max-w-xs w-full mx-auto hidden dark:block"
         />
         <p>
           I bring the approach of ‘user-centered-design’ to art. This process,
