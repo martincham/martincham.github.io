@@ -1,12 +1,6 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardFooter,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 
 import GitHubCard from "@/components/GitHubCard";
 

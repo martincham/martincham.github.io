@@ -32,8 +32,8 @@ const aboutItems = [
 
 const sidebarItems = [
   { name: "Sculpture", items: artItems },
-  { name: "Technical Projects", items: devItems },
-  { name: "About", items: aboutItems },
+  { name: "Coding", items: devItems },
+  { name: "Info", items: aboutItems },
 ];
 
 interface SidebarProps {
@@ -48,7 +48,9 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
         {/* Art Projects */}
         {sidebarItems.map((sidebarItem, index) => (
           <AccordionItem value={"item-" + index} key={index}>
-            <AccordionTrigger>{sidebarItem.name}</AccordionTrigger>
+            <AccordionTrigger className="text-md ">
+              {sidebarItem.name}
+            </AccordionTrigger>
             {sidebarItem.items.map((item, index) => (
               <Link
                 to={item.href}
@@ -58,7 +60,7 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
               >
                 <AccordionContent
                   key={index}
-                  className="rounded hover:bg-zinc-200 dark:hover:bg-zinc-800"
+                  className="pl-2 rounded hover:bg-zinc-200 dark:hover:bg-zinc-800"
                 >
                   <div className="justify-between flex" key={index}>
                     <div>{item.name}</div>

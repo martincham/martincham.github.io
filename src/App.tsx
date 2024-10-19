@@ -86,9 +86,9 @@ const App: React.FC = () => {
           <div className="flex z-30">
             {/* Sidebar Menu */}
             <div
-              className={`fixed md:relative md:translate-x-0 top-0 right-0 h-full w-52 md:w-72 transition-all duration-200 z-40 ${
+              className={`p-2 fixed md:relative md:translate-x-0 top-0 right-0 h-full md:min-w-64 w-52 md:w-72 transition-all duration-200 z-40 ${
                 isOpen
-                  ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent"
+                  ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent shadow-inner md:shadow-none"
                   : "translate-x-full duration-0 opacity-0 md:opacity-100"
               } md:flex md:flex-col overflow-y-auto`}
             >
