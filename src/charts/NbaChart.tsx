@@ -106,6 +106,7 @@ export function NbaChart() {
           tickLine={false}
           tickMargin={10}
           axisLine={false}
+          className="tracking-tight"
         />
         <ChartTooltip
           content={
