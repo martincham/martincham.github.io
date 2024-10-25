@@ -22,13 +22,11 @@ const HubrisDev: React.FC = () => {
         <Separator className="my-2" />
         {/* GitHub Card */}
         <div className="mx-auto flex  flex-col items-center justify-center gap-6  sm:p-6 lg:p-8">
-          <div className="grid w-full gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
-            <GitHubCard
-              repoName="Hubris Robotics"
-              description="C++ Arduino code for synchronized pedestal sculpture.."
-              repoLink="https://github.com/martincham/hubris"
-            />
-          </div>
+          <GitHubCard
+            repoName="Hubris Robotics"
+            description="C++ Arduino code for synchronized pedestal sculpture.."
+            repoLink="https://github.com/martincham/hubris"
+          />
         </div>
       </section>
     </div>
