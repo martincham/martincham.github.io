@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 
 const CeilingTile: React.FC = () => {
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 max-w-fit">
       <section className="container mx-auto py-2">
         <img
           src="/HQPictures/DropTile/dropTile.webp"

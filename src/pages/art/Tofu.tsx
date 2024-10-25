@@ -4,13 +4,13 @@ import { Separator } from "@/components/ui/separator";
 
 const Tofu: React.FC = () => {
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 max-w-fit">
       <section className=" py-2">
         <video
           controls
           autoPlay
           loop
-          className="w-full h-auto max-w-[500px]  object-contain mb-4"
+          className="w-full h-auto max-w-[500px] mx-auto object-contain mb-4"
         >
           <source src="/HQPictures/Tofu/tofu.mp4" type="video/mp4" />
           <source src="/HQPictures/Tofu/tofu.ogg" type="video/ogg" />
@@ -20,7 +20,7 @@ const Tofu: React.FC = () => {
         <img
           src="/HQPictures/Tofu/tofuDrip.webp"
           alt="Tofu"
-          className="w-full h-auto max-w-[500px]  object-contain"
+          className="w-full h-auto max-w-[500px] mx-auto object-contain"
         />
         <Separator className="my-4" />
         <a>Tofu. 2021. Mixed media.</a>

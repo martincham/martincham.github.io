@@ -39,43 +39,46 @@ const App: React.FC = () => {
           <div className="md:p-8 p-2">
             <div className="md:h-auto md:items-start md:justify-start  md:pt-0">
               {/* Header Bar */}
-              <div className="flex items-center justify-between flex-col md:flex-row">
-                {/* Title */}
-                <Link to="/">
-                  <h1 className="md:text-4xl text-3xl hover:text-zinc-500 dark:color-green-600 font-light mt-12 md:mt-0">
-                    Martin Chamberlin
-                  </h1>
-                </Link>
-                <div className="flex justify-end space-x-2 ml-auto">
-                  {/* Mode Toggle */}
-                  <div className="ml-auto z-50 flex items-center justify-center">
-                    <DarkSwitch />
-                  </div>
-                  {/* Mobile Hamburger Menu */}
-                  <Button
-                    variant="outline"
-                    className="ml-auto p-2 md:hidden bg-white dark:bg-black z-50"
-                    onClick={toggleSidebar}
-                    aria-label="Toggle sidebar"
-                  >
-                    <div>
-                      <span
-                        className={`block w-5 h-0.5 bg-black dark:bg-white mb-1 transition-transform ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}
-                      ></span>
-                      <span
-                        className={`block w-5 h-0.5 bg-black dark:bg-white mb-1 transition-opacity ${isOpen ? "opacity-0" : ""}`}
-                      ></span>
-                      <span
-                        className={`block w-5 h-0.5 bg-black dark:bg-white transition-transform ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
-                      ></span>
+              <div className=" top-0 z-30">
+                <div className="flex items-center justify-between flex-col md:flex-row">
+                  {/* Title */}
+                  <Link to="/">
+                    <h1 className="md:text-4xl text-3xl hover:text-zinc-500 dark:color-green-600 font-light mt-12 md:mt-0">
+                      Martin Chamberlin
+                    </h1>
+                  </Link>
+                  {/* Buttons */}
+                  <div className="flex justify-end space-x-2 ml-auto z-50">
+                    {/* Mode Toggle */}
+                    <div className="ml-auto z-50 flex items-center justify-center">
+                      <DarkSwitch />
                     </div>
-                  </Button>
+                    {/* Mobile Hamburger Menu */}
+                    <Button
+                      variant="outline"
+                      className="ml-auto p-2 md:hidden bg-white dark:bg-black z-50"
+                      onClick={toggleSidebar}
+                      aria-label="Toggle sidebar"
+                    >
+                      <div>
+                        <span
+                          className={`block w-5 h-0.5 bg-black dark:bg-white mb-1 transition-transform ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}
+                        ></span>
+                        <span
+                          className={`block w-5 h-0.5 bg-black dark:bg-white mb-1 transition-opacity ${isOpen ? "opacity-0" : ""}`}
+                        ></span>
+                        <span
+                          className={`block w-5 h-0.5 bg-black dark:bg-white transition-transform ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
+                        ></span>
+                      </div>
+                    </Button>
+                  </div>
                 </div>
 
                 {/* Overlay for Mobile */}
                 {isOpen && (
                   <div
-                    className="fixed inset-0 bg-zinc-900 opacity-50 md:hidden z-40"
+                    className="fixed inset-0 bg-zinc-900 opacity-50 md:hidden z-20"
                     onClick={toggleSidebar}
                   ></div>
                 )}
@@ -83,20 +86,20 @@ const App: React.FC = () => {
             </div>
           </div>
           {/* Sidebar and Content */}
-          <div className="flex z-30">
+          <div className="flex z-20 h-[calc(100vh-110px)]">
             {/* Sidebar Menu */}
             <div
-              className={`p-2 fixed md:relative md:translate-x-0 top-0 right-0 h-full md:min-w-64 w-52 md:w-72 transition-all duration-200 z-40 ${
+              className={`z-40 p-2 fixed md:relative md:translate-x-0 top-0 right-0 md:left-0 h-full md:min-w-64 w-52 md:w-72 transition-all duration-200 ${
                 isOpen
-                  ? "translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent shadow-inner md:shadow-none"
-                  : "translate-x-full duration-0 opacity-0 md:opacity-100"
+                  ? "z-40 translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent shadow-inner md:shadow-none"
+                  : "z-40 translate-x-full duration-0 opacity-0 md:opacity-100"
               } md:flex md:flex-col overflow-y-auto`}
             >
               <div className="py-10 md:hidden"></div>
               <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
             </div>
             {/* Content */}
-            <div className="flex w-full max-w-screen-lg mx-auto p-0 md:p-4">
+            <div className="flex-1 md:overflow-y-auto w-full max-w-screen-lg mx-auto p-0 md:p-4 z-10">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/hubris" element={<Hubris />} />
