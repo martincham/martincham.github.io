@@ -15,14 +15,16 @@ import { NbaChartPG } from "@/charts/NbaChartPG";
 const Nba: React.FC = () => {
   return (
     <div className="container mx-auto p-6">
-      <p>
-        This command-line tool I built in 2023 solves the problem of inaccurate
-        player valuation. It pulls data from ESPN's API, uses Pandas to
-        normalize each stat to it's average in the league, and pushes to
-        Google's Sheets API. It can also find marginal improvements a based on a
-        team's schedule. See the GitHub for more detail.
-      </p>
-      <Separator className="my-2" />
+      <section className="container mx-auto py-2">
+        <a>
+          This command-line tool I built in 2023 solves the problem of
+          inaccurate player valuation. It pulls data from ESPN's API, uses
+          Pandas to normalize each stat to it's average in the league, and
+          pushes to Google's Sheets API. It can also find marginal improvements
+          a based on a team's schedule. See the GitHub for more detail.
+        </a>
+        <Separator className="my-2" />
+      </section>
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-6 ">
         <div className="grid max-w- gap-6 md:grid-cols-1 lg:grid-cols-2  chart-wrapper">
           {/* NBA Chart Cards */}
