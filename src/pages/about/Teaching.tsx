@@ -7,10 +7,10 @@ const Teaching: React.FC = () => {
       <section className="container mx-auto py-2">
         <p>
           I created curriculum and taught 2 years of 3D Design to undergrads at
-          the University of Georgia. Students built work with wood, metal,
-          plaster, paper/cardboard, and found objects. I taught students how to
-          design and fabricate, and to professionaly photograph and edit their
-          work with Photoshop.
+          the University of Georgia. Students learned to design and fabricate
+          with wood, metal, plaster, paper/cardboard, and found objects. I also
+          taught students to professionaly photograph and edit their work with
+          Photoshop.
         </p>
         <Separator className="my-2" />
 
