@@ -14,7 +14,7 @@ import BallForBouncing from "@/pages/art/BallForBouncing.tsx";
 import Tofu from "@/pages/art/Tofu.tsx";
 import ExitSign from "@/pages/art/ExitSign.tsx";
 import CeilingTile from "@/pages/art/CeilingTile.tsx";
-import IroningBoard from "@/pages/art/IroningBoard.tsx";
+import WrinklingBoard from "@/pages/art/WrinklingBoard.tsx";
 /* Dev */
 import Nba from "@/pages/dev/NBA.tsx";
 import HubrisDev from "@/pages/dev/HubrisDev.tsx";
@@ -108,7 +108,7 @@ const App: React.FC = () => {
                 <Route path="/tofu" element={<Tofu />} />
                 <Route path="/exitsign" element={<ExitSign />} />
                 <Route path="/ceilingtile" element={<CeilingTile />} />
-                <Route path="/ironingboard" element={<IroningBoard />} />
+                <Route path="/wrinklingboard" element={<WrinklingBoard />} />
 
                 <Route path="/nba" element={<Nba />} />
                 <Route path="/websites" element={<Websites />} />

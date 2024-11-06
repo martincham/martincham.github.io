@@ -1,7 +1,7 @@
 import React from "react";
 import { Separator } from "@/components/ui/separator";
 
-const IroningBoard: React.FC = () => {
+const WrinklingBoard: React.FC = () => {
   return (
     <div className="container mx-auto p-6 max-w-fit">
       <section className="container mx-auto py-2">
@@ -17,4 +17,4 @@ const IroningBoard: React.FC = () => {
   );
 };
 
-export default IroningBoard;
+export default WrinklingBoard;
