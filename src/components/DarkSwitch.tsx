@@ -21,7 +21,7 @@ const DarkSwitch = React.forwardRef<
   return (
     <SwitchPrimitives.Root
       className={cn(
-        " object-center peer inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-1 border-white shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background  data-[state=checked]:bg-primary-foreground data-[state=unchecked]:border-black data-[state=unchecked]:bg-input",
+        " object-center peer inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-1 border-foreground shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background bg-input",
         className,
       )}
       onClick={handleToggle}
