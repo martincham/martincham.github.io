@@ -14,7 +14,7 @@ const Websites: React.FC = () => {
         </p>
         <Separator className="my-2" />
         <div className="mx-auto flex  flex-col items-center justify-center gap-6 p-4 sm:p-6 lg:p-8">
-          <div className=" grid w-full gap-6 sm:grid-cols-1 lg:grid-cols-2   justify-center">
+          <div className=" grid w-full max-w-2xl gap-6 sm:grid-cols-1 lg:grid-cols-2">
             {/* Website Cards */}
             <GitHubCard
               repoName="martinchamberlin.com"
@@ -22,7 +22,7 @@ const Websites: React.FC = () => {
               repoLink="https://github.com/martincham/martincham.github.io"
             />
             {/* unlisted.studio Card */}
-            <Card className="lg:max-w-md" x-chunk="charts-01-chunk-0">
+            <Card className="max-w-lg p-1.5" x-chunk="charts-01-chunk-0">
               <CardHeader>
                 <CardTitle>
                   <a
