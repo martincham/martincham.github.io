@@ -14,7 +14,7 @@ const Websites: React.FC = () => {
         </p>
         <Separator className="my-2" />
         <div className="mx-auto flex  flex-col items-center justify-center gap-6 p-4 sm:p-6 lg:p-8">
-          <div className="grid w-full gap-6 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+          <div className=" grid w-full gap-6 sm:grid-cols-1 lg:grid-cols-2   justify-center">
             {/* Website Cards */}
             <GitHubCard
               repoName="martinchamberlin.com"
@@ -33,7 +33,7 @@ const Websites: React.FC = () => {
                   </a>
                 </CardTitle>
               </CardHeader>
-              <CardFooter className="flex-col items-start gap-2 text-sm border-t">
+              <CardFooter className="flex-col items-start gap-2 text-sm ">
                 <div className="flex gap-2 font-medium leading-none pt-2">
                   Gallery show - Fall 2023.
                 </div>
