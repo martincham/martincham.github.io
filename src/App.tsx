@@ -56,7 +56,7 @@ const App: React.FC = () => {
                     {/* Mobile Hamburger Menu */}
                     <Button
                       variant="outline"
-                      className="ml-auto p-2 md:hidden bg-white dark:bg-black z-50"
+                      className="ml-auto p-2 md:hidden bg-background z-50 border-foreground"
                       onClick={toggleSidebar}
                       aria-label="Toggle sidebar"
                     >
