@@ -51,24 +51,24 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
             <AccordionTrigger className="text-md ">
               {sidebarItem.name}
             </AccordionTrigger>
-            {sidebarItem.items.map((item, index) => (
-              <Link
-                to={item.href}
-                onClick={toggleSidebar}
-                key={index}
-                className="hover:bg-zinc-200 dark:hover:bg-zinc-800"
-              >
-                <AccordionContent
+            <AccordionContent key={index} className="pl-2">
+              {sidebarItem.items.map((item, index) => (
+                <Link
+                  to={item.href}
+                  onClick={toggleSidebar}
                   key={index}
-                  className="pl-2 rounded hover:bg-zinc-200 dark:hover:bg-zinc-800"
+                  className=""
                 >
-                  <div className="justify-between flex" key={index}>
+                  <div
+                    className=" hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded justify-between flex"
+                    key={index}
+                  >
                     <div>{item.name}</div>
                     <div className="italic opacity-50">{item.date}</div>
                   </div>
-                </AccordionContent>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
