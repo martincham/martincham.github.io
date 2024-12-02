@@ -43,7 +43,7 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
   return (
-    <nav className="flex flex-col space-y-2 pt-24 md:pt-0 md:space-y-0 md:flex-row md:items-center md:justify-between md:px-4 md:py-4">
+    <nav className="flex flex-col md:flex-row md:items-center md:justify-between md:px-4 md:py-4">
       <Accordion type="multiple" className="w-full">
         {/* Art Projects */}
         {sidebarItems.map((sidebarItem, index) => (

@@ -48,7 +48,7 @@ const App: React.FC = () => {
                     </h1>
                   </Link>
                   {/* Buttons */}
-                  <div className="flex justify-end space-x-2 ml-auto z-50">
+                  <div className="flex justify-end space-x-2 ml-auto z-30">
                     {/* Mode Toggle */}
                     <div className="ml-auto z-50 flex items-center justify-center">
                       <DarkSwitch />
@@ -56,8 +56,9 @@ const App: React.FC = () => {
                     {/* Mobile Hamburger Menu */}
                     <Button
                       variant="outline"
-                      className="ml-auto p-2 md:hidden bg-background z-50 border-foreground"
+                      className="ml-auto p-2 md:hidden bg-background outline-foreground"
                       onClick={toggleSidebar}
+                      size="icon"
                       aria-label="Toggle sidebar"
                     >
                       <div>
@@ -95,7 +96,28 @@ const App: React.FC = () => {
                   : "z-40 translate-x-full duration-0 opacity-0 md:opacity-100"
               } md:flex md:flex-col overflow-y-auto`}
             >
-              <div className="py-10 md:hidden"></div>
+              <div className="h-[120px] relative md:hidden">
+                {/* Mobile Hamburger Menu */}
+
+                <Button
+                  variant="outline"
+                  className="ml-auto p-2 md:hidden bg-background justify-between absolute bottom-0 right-0 "
+                  onClick={toggleSidebar}
+                  aria-label="Toggle sidebar"
+                >
+                  <div>
+                    <span
+                      className={`block w-5 h-0.5 bg-black dark:bg-white mb-1 transition-transform ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}
+                    ></span>
+                    <span
+                      className={`block w-5 h-0.5 bg-black dark:bg-white mb-1 transition-opacity ${isOpen ? "opacity-0" : ""}`}
+                    ></span>
+                    <span
+                      className={`block w-5 h-0.5 bg-black dark:bg-white transition-transform ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`}
+                    ></span>
+                  </div>
+                </Button>
+              </div>
               <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
             </div>
             {/* Content */}
