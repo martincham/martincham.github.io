@@ -48,7 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
         {/* Art Projects */}
         {sidebarItems.map((sidebarItem, index) => (
           <AccordionItem value={"item-" + index} key={index}>
-            <AccordionTrigger className="text-md ">
+            <AccordionTrigger className="text-lg ">
               {sidebarItem.name}
             </AccordionTrigger>
             <AccordionContent key={index} className="pl-2">
