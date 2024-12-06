@@ -48,7 +48,7 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
         {/* Art Projects */}
         {sidebarItems.map((sidebarItem, index) => (
           <AccordionItem value={"item-" + index} key={index}>
-            <AccordionTrigger className="text-lg ">
+            <AccordionTrigger className="text-lg font-medium">
               {sidebarItem.name}
             </AccordionTrigger>
             <AccordionContent key={index} className="pl-2">
@@ -60,10 +60,10 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
                   className=""
                 >
                   <div
-                    className=" hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded justify-between flex"
+                    className=" hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded justify-between flex  text-md"
                     key={index}
                   >
-                    <div>{item.name}</div>
+                    <div className="font-medium">{item.name}</div>
                     <div className="italic opacity-50">{item.date}</div>
                   </div>
                 </Link>

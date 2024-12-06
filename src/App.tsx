@@ -92,7 +92,7 @@ const App: React.FC = () => {
             <div
               className={`z-40 p-2 fixed md:relative md:translate-x-0 top-0 right-0 md:left-0 h-full md:min-w-64 w-52 md:w-72 transition-all duration-200 ${
                 isOpen
-                  ? "z-40 translate-x-0 bg-gray-50 dark:bg-zinc-950 md:bg-transparent shadow-inner md:shadow-none"
+                  ? "z-40 translate-x-0 bg-zinc-50 md: dark:bg-zinc-950 md:bg-transparent md:dark:bg-transparent shadow-inner md:shadow-none"
                   : "z-40 translate-x-full duration-0 opacity-0 md:opacity-100"
               } md:flex md:flex-col overflow-y-auto`}
             >
