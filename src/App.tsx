@@ -43,7 +43,7 @@ const App: React.FC = () => {
                 <div className="flex items-center justify-between flex-col md:flex-row">
                   {/* Title */}
                   <Link to="/">
-                    <h1 className="md:text-4xl text-3xl hover:text-zinc-500 dark:color-green-600 font-black mt-12 md:mt-0">
+                    <h1 className="md:text-4xl text-3xl hover:text-zinc-500 dark:color-green-600 font-semibold mt-12 md:mt-0">
                       Martin Chamberlin
                     </h1>
                   </Link>
