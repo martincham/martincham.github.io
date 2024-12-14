@@ -32,7 +32,7 @@ const aboutItems = [
 
 const sidebarItems = [
   { name: "Sculpture", items: artItems },
-  { name: "Coding", items: devItems },
+  // { name: "Coding", items: devItems },
   { name: "Info", items: aboutItems },
 ];
 
@@ -43,33 +43,30 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
   return (
-    <nav className="flex flex-col md:flex-row md:items-center md:justify-between md:px-4 md:py-4">
+    <nav className="text-sm flex flex-col md:flex-row md:items-center md:justify-between md:px-4 md:py-4">
       <Accordion type="multiple" className="w-full">
         {/* Art Projects */}
         {sidebarItems.map((sidebarItem, index) => (
-          <AccordionItem value={"item-" + index} key={index}>
-            <AccordionTrigger className="text-lg font-medium">
-              {sidebarItem.name}
-            </AccordionTrigger>
-            <AccordionContent key={index} className="pl-2">
-              {sidebarItem.items.map((item, index) => (
+          <div key={index}>
+            <div key={index} className="pl-2 pb-4">
+              {sidebarItem.items.map((item, jindex) => (
                 <Link
                   to={item.href}
                   onClick={toggleSidebar}
-                  key={index}
+                  key={jindex}
                   className=""
                 >
                   <div
                     className=" hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded justify-between flex  text-md"
-                    key={index}
+                    key={jindex}
                   >
-                    <div className="font-medium">{item.name}</div>
+                    <div className="">{item.name}</div>
                     <div className="italic opacity-50">{item.date}</div>
                   </div>
                 </Link>
               ))}
-            </AccordionContent>
-          </AccordionItem>
+            </div>
+          </div>
         ))}
       </Accordion>
     </nav>
