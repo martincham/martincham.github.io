@@ -1,11 +1,6 @@
 // src/components/Sidebar.tsx
 import { Link } from "react-router-dom";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion } from "@/components/ui/accordion";
 
 const artItems = [
   { name: "Hubris", date: "2024", href: "/hubris" },
@@ -17,11 +12,11 @@ const artItems = [
   { name: "Tofu", date: "2021", href: "/tofu" },
 ];
 
-const devItems = [
-  { name: "Hubris Robotics", date: "2024", href: "/hubrisdev" },
-  { name: "NBA Analyzer", date: "'23-Present", href: "/nba" },
-  { name: "Websites", date: "'16-Present", href: "/websites" },
-];
+// const devItems = [
+//  { name: "Hubris Robotics", date: "2024", href: "/hubrisdev" },
+//  { name: "NBA Analyzer", date: "'23-Present", href: "/nba" },
+//  { name: "Websites", date: "'16-Present", href: "/websites" },
+//];
 
 const aboutItems = [
   { name: "About Me", date: "", href: "/about" },

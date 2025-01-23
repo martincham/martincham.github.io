@@ -129,7 +129,7 @@ export function NbaChartPG() {
                   {/* Add this after the last item */}
                   {index === 5 && (
                     <div className="mt-1.5 flex basis-full items-center border-t pt-1.5 text-xs font-medium text-foreground">
-                      Total
+                      Average
                       <div className="ml-auto flex items-baseline gap-0.5 font-mono font-medium tabular-nums text-foreground">
                         {Math.floor(
                           (item.payload.points +
