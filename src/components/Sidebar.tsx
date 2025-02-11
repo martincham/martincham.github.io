@@ -1,5 +1,5 @@
 // src/components/Sidebar.tsx
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Accordion } from "@/components/ui/accordion";
 
 const artItems = [
@@ -46,20 +46,19 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
           <div key={index}>
             <div key={index} className="pl-2 pb-4">
               {sidebarItem.items.map((item, jindex) => (
-                <Link
+                <NavLink
+                  key={jindex}
                   to={item.href}
                   onClick={toggleSidebar}
-                  key={jindex}
-                  className=""
+                  className={({ isActive }) =>
+                    `flex justify-between items-center p-2 rounded text-md hover:bg-zinc-300 dark:hover:bg-zinc-700 ${
+                      isActive ? "bg-zinc-100 dark:bg-zinc-800" : ""
+                    }`
+                  }
                 >
-                  <div
-                    className=" hover:bg-zinc-200 dark:hover:bg-zinc-800 p-2 rounded justify-between flex  text-md"
-                    key={jindex}
-                  >
-                    <div className="">{item.name}</div>
-                    <div className="italic opacity-50">{item.date}</div>
-                  </div>
-                </Link>
+                  <div className="">{item.name}</div>
+                  <div className="italic opacity-50">{item.date}</div>
+                </NavLink>
               ))}
             </div>
           </div>
