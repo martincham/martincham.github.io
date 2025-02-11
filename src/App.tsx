@@ -123,7 +123,7 @@ const App: React.FC = () => {
               <Sidebar toggleSidebar={toggleSidebar} isOpen={isOpen} />
             </div>
             {/* Content */}
-            <div className="flex-1 md:overflow-y-auto w-full max-w-screen-lg mx-auto p-0 md:p-4 z-10">
+            <div className="flex-1 md:overflow-y-auto w-full  mx-auto p-0 md:p-4 z-10">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/hubris" element={<Hubris />} />
