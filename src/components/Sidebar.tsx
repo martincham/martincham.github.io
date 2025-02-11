@@ -43,24 +43,22 @@ const Sidebar: React.FC<SidebarProps> = ({ toggleSidebar }) => {
       <Accordion type="multiple" className="w-full">
         {/* Art Projects */}
         {sidebarItems.map((sidebarItem, index) => (
-          <div key={index}>
-            <div key={index} className="pl-2 pb-4">
-              {sidebarItem.items.map((item, jindex) => (
-                <NavLink
-                  key={jindex}
-                  to={item.href}
-                  onClick={toggleSidebar}
-                  className={({ isActive }) =>
-                    `flex justify-between items-center p-2 rounded text-md hover:bg-zinc-300 dark:hover:bg-zinc-700 ${
-                      isActive ? "bg-zinc-100 dark:bg-zinc-800" : ""
-                    }`
-                  }
-                >
-                  <div className="">{item.name}</div>
-                  <div className="italic opacity-50">{item.date}</div>
-                </NavLink>
-              ))}
-            </div>
+          <div key={index} className="pl-2 pb-4">
+            {sidebarItem.items.map((item, jindex) => (
+              <NavLink
+                key={jindex}
+                to={item.href}
+                onClick={toggleSidebar}
+                className={({ isActive }) =>
+                  `flex justify-between items-center p-2 rounded text-md hover:bg-zinc-300 dark:hover:bg-zinc-700 ${
+                    isActive ? "bg-zinc-100 dark:bg-zinc-800" : ""
+                  }`
+                }
+              >
+                <div className="">{item.name}</div>
+                <div className="italic opacity-50">{item.date}</div>
+              </NavLink>
+            ))}
           </div>
         ))}
       </Accordion>
