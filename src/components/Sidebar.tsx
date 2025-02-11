@@ -10,6 +10,7 @@ const artItems = [
   { name: "Ceiling Tile", date: "2022", href: "/ceilingtile" },
   { name: "Ball for Bouncing", date: "2022", href: "/ballforbouncing" },
   { name: "Tofu", date: "2021", href: "/tofu" },
+  { name: "Archive", date: "", href: "/archive" },
 ];
 
 // const devItems = [
