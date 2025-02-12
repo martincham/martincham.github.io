@@ -8,7 +8,7 @@ const CeilingTile: React.FC = () => {
         <img
           src="/HQPictures/DropTile/dropTile.webp"
           alt="Drop Ceiling Tile"
-          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
+          className="w-full h-auto max-w-3xl  object-contain"
         />
         <Separator className="my-4" />
         <a>Ceiling Tile. 2022. Oil on canvas. 24 x 24"</a>

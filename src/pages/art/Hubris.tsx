@@ -9,7 +9,7 @@ const Hubris: React.FC = () => {
           controls
           autoPlay
           loop
-          className="w-full h-auto max-w-screen object-contain pb-4"
+          className="w-full h-auto max-w-5xl object-contain pb-4"
         >
           <source src="/HQPictures/Hubris/hubris.mp4" type="video/mp4" />
           <source src="/HQPictures/Hubris/hubris.ogg" type="video/ogg" />
@@ -18,7 +18,7 @@ const Hubris: React.FC = () => {
         <img
           src="/HQPictures/Hubris/hubrisBlur.webp"
           alt="Hubris"
-          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
+          className="w-full h-auto max-w-5xl max-h-[800px] object-contain"
         />
         <Separator className="my-4" />
         <a>Hubris. 2024. Mixed media and robotics.</a>

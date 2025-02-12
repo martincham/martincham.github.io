@@ -8,7 +8,7 @@ const ExitSign: React.FC = () => {
         <img
           src="/HQPictures/ExitSign/exitSign.webp"
           alt="Exit Sign"
-          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
+          className="w-full h-auto max-w-xl max-h-[800px] object-contain"
         />
         <Separator className="my-4" />
         <a>Exit Sign. 2022. Acrylic on canvas. 7x12"</a>

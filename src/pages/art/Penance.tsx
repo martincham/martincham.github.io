@@ -8,17 +8,17 @@ const Penance: React.FC = () => {
         <img
           src="/HQPictures/Penance/rockbox2.webp"
           alt="Penance Open"
-          className="w-full h-auto max-w-screen max-h-[800px] object-contain mb-4"
+          className="w-full h-auto max-w-xl max-h-[800px] object-contain mb-4"
         />
         <img
           src="/HQPictures/Penance/rockbox.webp"
           alt="Penance"
-          className="w-full h-auto max-w-screen max-h-[800px] object-contain mb-4"
+          className="w-full h-auto max-w-xl max-h-[800px] object-contain mb-4"
         />
         <img
           src="/HQPictures/Penance/rockbox3.webp"
           alt="Penance Back"
-          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
+          className="w-full h-auto max-w-xl max-h-[800px] object-contain"
         />
         <Separator className="my-4" />
         <a>Penance. 2024. Granite, wood, and luggage hardware.</a>

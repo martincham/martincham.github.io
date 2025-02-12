@@ -10,7 +10,7 @@ const Tofu: React.FC = () => {
           controls
           autoPlay
           loop
-          className="w-full h-auto max-w-[500px] mx-auto object-contain mb-4"
+          className="w-full h-auto max-w-xl mx-auto object-contain mb-4"
         >
           <source src="/HQPictures/Tofu/tofu.mp4" type="video/mp4" />
           <source src="/HQPictures/Tofu/tofu.ogg" type="video/ogg" />
@@ -20,7 +20,7 @@ const Tofu: React.FC = () => {
         <img
           src="/HQPictures/Tofu/tofuDrip.webp"
           alt="Tofu"
-          className="w-full h-auto max-w-[500px] mx-auto object-contain"
+          className="w-full h-auto max-w-xl mx-auto object-contain"
         />
         <Separator className="my-4" />
         <a>Tofu. 2021. Mixed media.</a>

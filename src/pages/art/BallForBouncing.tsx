@@ -10,7 +10,7 @@ const BallForBouncing: React.FC = () => {
           controls
           autoPlay
           loop
-          className="w-full h-auto max-w-[500px] mx-auto object-contain my-4"
+          className="w-full h-auto max-w-xl mx-auto object-contain my-4"
         >
           <source
             src="/HQPictures/Basketball/1080vertical.mp4"
@@ -21,7 +21,7 @@ const BallForBouncing: React.FC = () => {
         <img
           src="/HQPictures/Basketball/basketball.webp"
           alt="Ball for Bouncing"
-          className="w-full h-auto max-w-screen max-h-[800px] object-contain"
+          className="w-full h-auto max-w-xl max-h-[800px] object-contain"
         />
 
         <Separator className="my-4" />

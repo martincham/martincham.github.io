@@ -5,7 +5,7 @@ const Resume: React.FC = () => {
   const pdfUrl = "/files/MartinChamberlinResume.pdf";
   return (
     <div className="container mx-auto p-6 ">
-      <section className="container mx-auto py-2">
+      <section className="container mx-auto py-2 max-w-4xl">
         {isMobile ? (
           <a
             href={pdfUrl}
