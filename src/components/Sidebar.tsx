@@ -23,7 +23,6 @@ const aboutItems = [
   { name: "About Me", date: "", href: "/about" },
   { name: "Artist Statement", date: "", href: "/artist" },
   { name: "Resume", date: "", href: "/resume" },
-  { name: "Teaching", date: "", href: "/teaching" },
 ];
 
 const sidebarItems = [
